@@ -1,0 +1,93 @@
+<html>
+<head>
+	<title>Sort Numbers</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		var realOne = -56;
+		var realTwo = -55;
+		var realThree = 3;
+		if (realOne > realTwo)
+        {
+            if (realTwo > realThree)
+            {
+                which = 1;
+                jsConsole.writeLine(realOne);
+            }
+            else
+            {
+                if (realOne < realThree)
+                {   
+                    which=3;
+                    jsConsole.writeLine(realThree);
+                }
+                else
+                {
+                    which = 1;
+                    jsConsole.writeLine(realOne);
+                }
+            }
+        }
+        else
+        {
+            if (realOne > realThree)
+            {
+                which = 2;
+                jsConsole.writeLine(realTwo);
+            }
+            else
+            {
+                if (realTwo < realThree)
+                {
+                    which = 3;
+                    jsConsole.writeLine(realThree);
+                }
+                else
+                {
+                    which = 2;
+                    jsConsole.writeLine(realTwo);
+                }
+            }
+        }
+        switch (which)
+        {
+            case 1: if (realTwo>realThree)
+                {
+                   jsConsole.writeLine(realTwo);
+				   jsConsole.writeLine(realThree);
+                }
+                else 
+				{
+					jsConsole.writeLine(realThree);
+					jsConsole.writeLine(realTwo);
+				}
+                break;
+            case 2: if (realOne > realThree)
+                {
+                    jsConsole.writeLine(realOne);
+					jsConsole.writeLine(realThree);
+                }
+                else
+				{
+					jsConsole.writeLine(realThree);
+					jsConsole.writeLine(realOne);
+				}
+                break;
+            case 3: if (realTwo > realOne)
+                {
+                    jsConsole.writeLine(realTwo);
+					jsConsole.writeLine(realOne);
+                }
+                else
+				{
+					jsConsole.writeLine(realOne);
+					jsConsole.writeLine(realTwo);
+				}
+                break;
+        }
+	</script>
+</body>
+</html>

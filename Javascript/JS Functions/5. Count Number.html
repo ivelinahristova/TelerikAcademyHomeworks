@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Count Number</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+	    function Occurrences(number, array) {
+	        var count = 0;
+	        for (var num in array) {
+	            if (array[num] == number) {
+	                count++;
+	            }
+	        }
+	        return count;
+	    }
+	    var number = 6;
+	    var arr = new Array();
+	    arr[0] = 35;
+	    arr[1] = 2;
+	    arr[2] = 6;
+	    arr[3] = 67;
+	    arr[4] = 6;
+	    arr[5] = 6;
+	    arr[6] = 7;
+	    jsConsole.writeLine("Array:");
+	    for (var i = 0; i < arr.length; i++) {
+	        jsConsole.writeLine(arr[i]);
+	    }
+	    jsConsole.write("The count of the number '" + number + "' is ");
+	    jsConsole.writeLine(Occurrences(number, arr));
+
+
+	</script>
+</body>
+</html>

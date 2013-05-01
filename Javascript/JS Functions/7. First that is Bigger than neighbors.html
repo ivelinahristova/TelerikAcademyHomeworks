@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>IsBigger</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+	    function IsBigger(position, array) {
+	        var isBigger = true;
+	        if (position >= 1 && position <= array.length - 2) {
+	            if ((array[position-1] >= array[position]) || (array[position+1] > array[position])) {
+	                isBigger = false
+	            }
+	            else {
+	                if (position >=1) {
+	                    if (array[position + 1] >= array[position])
+	                    {
+	                        isBigger = false;
+	                    }
+	                }
+	                else {
+	                    if (array[position - 1] >= array[position]) {
+	                        isBigger = false;
+	                    }
+	                }
+	            }
+	        }
+
+	        return isBigger;
+	    }
+
+	    function FirstBigger(array) {
+	        for (var i = 0; i < array.length; i++) {
+	            if (IsBigger(i, array) === true) {
+	                return i;
+	            }
+	        }
+	        return -1;
+	    }
+
+	    var position = 3;
+	    var arr = new Array();
+	    arr[0] = 35;
+	    arr[1] = 2;
+	    arr[2] = 6;
+	    arr[3] = 67;
+	    arr[4] = 6;
+	    arr[5] = 6;
+	    arr[6] = 7;
+	    jsConsole.writeLine("Array:");
+	    for (var i = 0; i < arr.length; i++) {
+	        jsConsole.writeLine(arr[i]);
+	    }
+	    jsConsole.write("The first number that is bigger than his neighbors is at position " + FirstBigger(arr));
+
+
+	</script>
+</body>
+</html>

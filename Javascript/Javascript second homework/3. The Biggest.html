@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Sign</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		var realOne = -56;
+		var realTwo = 55;
+		var realThree = 3;
+		        if (realOne>realTwo)
+        {
+            if (realTwo>realThree)
+            {
+                jsConsole.writeLine("The biggest one is " + realOne);
+            }
+            else
+            {
+                if (realOne<realThree)
+                {
+                    jsConsole.writeLine("The biggest one is " + realThree);
+                }
+                else
+                {
+                    jsConsole.writeLine("The biggest one is " + realOne);
+                }
+            }
+        }
+        else
+        {
+            if (realOne > realThree)
+            {
+                jsConsole.writeLine("The biggest one is " + realTwo);
+            }
+            else
+            {
+                if (realTwo < realThree)
+                {
+                    jsConsole.writeLine("The biggest one is " + realThree);
+                }
+                else
+                {
+                    jsConsole.writeLine("The biggest one is " + realTwo);
+                }
+            }
+        }
+	</script>
+</body>
+</html>

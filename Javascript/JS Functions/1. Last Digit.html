@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Last Digit</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+	    function LastDigit(number) {
+	        switch (number % 10) {
+	            case 0: jsConsole.writeLine("Zero"); break;
+	            case 1: jsConsole.writeLine("One"); break;
+	            case 2: jsConsole.writeLine("Two"); break;
+	            case 3: jsConsole.writeLine("Three"); break;
+	            case 4: jsConsole.writeLine("Four"); break;
+	            case 5: jsConsole.writeLine("Five"); break;
+	            case 6: jsConsole.writeLine("Six"); break;
+	            case 7: jsConsole.writeLine("Seven"); break;
+	            case 8: jsConsole.writeLine("Eight"); break;
+	            case 9: jsConsole.writeLine("Nine"); break;
+	            default: jsConsole.writeLine("Not a number!"); break;
+
+	        }
+	    }
+		
+	    LastDigit(12);
+	    LastDigit(146);
+	</script>
+</body>
+</html>

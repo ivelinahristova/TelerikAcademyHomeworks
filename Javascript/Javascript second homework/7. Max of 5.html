@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Digit Names</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		var numbers = new Array();
+        var max=0, i;
+        numbers[0]= 1;
+		numbers[1]= 67;
+		numbers[2]= 23;
+		numbers[3]= 11;
+		numbers[4]= 4;
+        var max = numbers[0];
+        for (i = 0; i < 5; i++)
+        {
+            if (max<numbers[i])
+            {
+                max = numbers[i];
+            }
+
+        }
+        jsConsole.writeLine(max);
+	</script>
+</body>
+</html>

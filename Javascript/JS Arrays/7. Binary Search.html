@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>Maximal sequence</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+
+	    function Search(x, arrayX, arrayLength)
+	    {
+	        var min = 0, max = arrayLength - 1;
+	        while (min<max)
+	        {
+	            var middle = (min + max) / 2;
+	            if (arrayX[middle]<x)
+	            {
+	                min = middle + 1;
+	            }
+	            else
+	            {
+	                max = middle;
+	            }
+	        }
+	        if (min==max && arrayX[min]==x)
+	        {
+	            return min;
+	        }
+	        else
+	        {
+	            return -1;
+	        }
+	    }
+
+
+		var arr = new Array();
+		arr[0] = 5;
+		arr[1] = 5;
+		arr[2] = 12;
+		arr[3] = 5;
+		arr[4] = 12;
+		var n=5,element,index;
+
+		element = 12;
+        index = Search(element, arr, n);
+        if (index==-1)
+		{
+            jsConsole.writeLine("Element not found");
+		}
+		else
+		{
+            jsConsole.writeLine(element +  " is with index " + index);
+		}
+	</script>
+</body>
+</html>

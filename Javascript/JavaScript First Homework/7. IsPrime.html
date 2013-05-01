@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Is prime</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		var number = 36
+        var count=0
+		var i;
+        for (i = 1; i <= number; i++)
+        {
+            if (number%i==0)
+            {
+                count++; if (count>=3)
+                {
+                    break;
+                }
+            }
+        }
+        if (count==2)
+        {
+            jsConsole.writeLine(number + " is Prime")
+        }
+        else jsConsole.writeLine(number + " isn't Prime")
+	</script>
+</body>
+</html>

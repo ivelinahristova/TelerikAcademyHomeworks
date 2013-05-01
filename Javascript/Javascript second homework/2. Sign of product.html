@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Sign</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		var realOne = -56;
+		var realTwo = -55;
+		var realThree = 3;
+		if((realOne > 0 && realTwo > 0 && realThree > 0)
+		|| (realOne < 0 && realTwo < 0 && realThree > 0)
+		|| (realOne > 0 && realTwo < 0 && realThree < 0)
+		|| (realOne < 0 && realTwo > 0 && realThree < 0))
+		jsConsole.writeLine("+")
+		else jsConsole.writeLine("-")
+	</script>
+</body>
+</html>

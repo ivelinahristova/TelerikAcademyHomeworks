@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>Is third bit One or Not</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		var number,mask=1;
+        var bit;
+        number = 56;
+        bit =((mask << 4 & number)!=0 ? true : false);
+        jsConsole.writeLine("Statement Third bit of " + number + " is 1 is " + bit);
+		
+	</script>
+</body>
+</html>

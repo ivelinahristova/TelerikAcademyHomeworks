@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Maximal sequence</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		var arr = new Array();
+		arr[0] = 1;
+		arr[1] = 6;
+		arr[2] = 3;
+		arr[3] = 4;
+		arr[4] = 12;
+
+		var counter = 1;
+		var max = 1;
+		var firstIndex = 0;
+		for(var i=0; i<arr.length-1; i++)
+		{
+		    if (arr[i] < arr[i + 1]) {
+		        counter++;
+		    }
+		    
+		        if (max < counter) {
+		            max = counter;
+		            lastIndex = i+1;
+		        }
+		        if ((arr[i] >= arr[i + 1])) {
+		            counter = 1;
+		            
+		        }
+		        
+		    
+		}
+		//jsConsole.writeLine(lastIndex);
+		jsConsole.writeLine("max = " + max);
+        jsConsole.write("{")
+		for (var i = lastIndex - max +1 ; i < lastIndex; i++) {
+            jsConsole.write(arr[i] + ", ")
+		}
+		jsConsole.write(arr[lastIndex] + "}");
+	</script>
+</body>
+</html>

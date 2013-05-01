@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Odd or Even</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Properties</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console">
+    </div>
+    
+    <script src="scripts/js-console.js"></script>
+    <script>
+		findSmallest(document);
+        findBiggest(document);
+		
+        findSmallest(window);
+        findBiggest(window);
+		
+        findSmallest(navigator);
+        findBiggest(navigator);
+        
+        function findSmallest(object) {
+            var smallest = "zzz";
+            for (var property in object) {
+                if (property<smallest) {
+                    smallest = property;
+                }
+            }
+            jsConsole.writeLine("The smallest lexicographically property in "+object+ " is "+smallest);
+        }
+        function findBiggest(object) {
+            var biggest = "aaa";
+            for (var property in object) {
+                if (property > biggest) {
+                    biggest = property;
+                }
+            }
+            jsConsole.writeLine("The biggest lexicographically property in " + object + " is " + biggest);
+        }
+		
+	</script>
+</body>
+</html>

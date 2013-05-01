@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Count Divs</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+	    function Occurrences(HTMLtext) {
+	       var count = 0;
+	        var index = HTMLtext.indexOf("<div>");
+	        while (index != -1) {
+	            count++;
+	            index = HTMLtext.indexOf("<div>", index + 1);
+
+	        }
+            return count;
+	    }
+	    text = "<div> new div </div> <h1> header </h1> <div> another div </div>";
+	    jsConsole.writeLine(Occurrences(text));
+
+
+	</script>
+</body>
+</html>

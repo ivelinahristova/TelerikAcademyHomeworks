@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Odd or Even</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		var firstArr = new Array();
+		var secondArr = new Array();
+		firstArr[0] = 'a';
+		firstArr[1] = 'b';
+		
+		secondArr[0] = 'a';
+		secondArr[1] = 'b';
+		secondArr[2] = 'c';
+
+		if (firstArr.length > secondArr.length) {
+		    jsConsole.writeLine("The second array is more lexicographically ordered");
+		}
+		else {
+		    if (firstArr.length < secondArr.length) {
+		        jsConsole.writeLine("The first array is more lexicographically ordered");
+		    }
+		    else {
+
+		        var firstIsBigger;
+		        for (var i = 0; i < firstArr.length; i++) {
+		            if (firstArr[i] === secondArr[i])
+		                i++;
+		            if (firstArr[i] > secondArr[i]) {
+		                firstIsBigger = true;
+		                break;
+		            }
+		            else if (firstArr[i] < secondArr[i]) {
+		                firstIsBigger = false;
+		                break;
+		            }
+		        }
+		        if (firstIsBigger == true)
+		            jsConsole.writeLine("The second array is more lexographically ordered");
+		        else
+		            jsConsole.writeLine("The first array is more lexicographically ordered");
+
+
+		    }
+		}
+		
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Occurrences</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+	    function Occurrences(word, text, isSensitive) {
+	        var count = 0;
+	        if (isSensitive === true) {
+	            var index = text.indexOf(word);
+	            while (index != -1) {
+	                count++;
+	                index = text.indexOf(word, index + 1);
+
+	            }
+	        }
+
+	        if (isSensitive === false) {
+	            var array = text.split(word);
+	            count = array.length;
+	        }
+            return count
+	    }
+	   var  word = "word";
+	   var text = "word and the Word are the same word."
+	   jsConsole.write("Not sensitive - ");
+	   jsConsole.writeLine(Occurrences(word, text, false));
+	   jsConsole.write("Sensitive - ");
+	   jsConsole.writeLine(Occurrences(word, text, true));
+
+
+	</script>
+</body>
+</html>

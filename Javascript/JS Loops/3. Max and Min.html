@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Odd or Even</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		var arr = new Array();
+		arr[0] = 5;
+		arr[1] = 12;
+		arr[2] = 1;
+		arr[3] = 122;
+		arr[4] = 15;
+
+		var min = arr[0];
+		var max = arr[0];
+		for(var i=0; i<5; i++)
+		{
+			if(arr[i]<min) min=arr[i];
+			if(arr[i]>max) max=arr[i];
+		}
+		jsConsole.writeLine("min = " + min);
+		jsConsole.writeLine("max = " + max);
+		
+	</script>
+</body>
+</html>

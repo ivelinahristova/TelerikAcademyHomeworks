@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Odd or Even</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		var a = 56;
+		var b = 55;
+		var c;
+		if(a>b)
+		{
+			c=a;
+			a=b;
+			b=c;	
+		}
+
+		jsConsole.writeLine("a=" + a);
+		jsConsole.writeLine("b=" + b);
+	</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Remove elements</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    
+    <script src="scripts/js-console.js"></script>
+    <script>
+
+       Array.prototype.removeValue= function(valueToRemove) { 
+            var resultArray = []; 
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] != valueToRemove) { 
+                    resultArray.push(arr[i]); 
+                }
+            }
+            return resultArray;
+        }
+
+        var arr = [2, 2, 1, 3, 5, 1, 23, 3, 66, 1];
+        var valueToRemove = 2;
+
+        jsConsole.writeLine("The array before remove all elements with value " + valueToRemove + " is " + arr);
+
+        
+        var result = arr.removeValue(valueToRemove);
+
+        jsConsole.writeLine("The array after  the remove: "  + result);
+      
+
+    </script>
+</body>
+</html>

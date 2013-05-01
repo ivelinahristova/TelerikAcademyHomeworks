@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Digit Names</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+		var a = 1;
+		var b = 4;
+		var c = -6;
+       if (a==0 && b!=0)
+        {
+			var result = -c/b
+            jsConsole.writeLine("x=" + result);
+        }
+        var D = b * b - 4 * a * c;
+        if (D==0)
+        {
+			var result1 = -b/(2*a)
+            jsConsole.writeLine("x1=x2=" + result1);
+        }
+        if (D < 0)
+        {
+            jsConsole.writeLine("There are no real roots");
+        }
+        if (D > 0)
+        {
+			var result = -b + Math.sqrt(D)/ (2 * a)
+            jsConsole.writeLine("x1=" + result);
+			var result = -b - Math.sqrt(D)/ (2 * a)
+           jsConsole.writeLine("x2=" + result);
+        }
+	</script>
+</body>
+</html>
