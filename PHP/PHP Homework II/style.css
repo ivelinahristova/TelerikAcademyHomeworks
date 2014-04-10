@@ -1,0 +1,168 @@
+/* 
+    Document   : style
+    Created on : 2013-10-1, 15:57:00
+    Author     : Ivelina
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body
+{
+    padding: 0px;
+    margin: 0px;
+    background-color: #f7fcc3;
+}
+root { 
+    display: block;
+}
+.left
+{
+    float: left;
+}
+.clear
+{
+    clear: both;
+}
+.button > a
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #567;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 2px solid #555;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.button > a:hover
+{
+    background-color: #abc;
+}
+#username
+{
+    font-size: 1.5em;
+    color: #567;
+    margin-right: 20px;
+}
+#user
+{
+    margin-bottom: 30px;
+    margin-left: 90px;
+}
+input[type='text'], input[type='password']
+{
+    background-color: #d9eef0;
+    color: #000;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #567;
+}
+label
+{
+    color: #567;
+    font-size: 1.2em;
+    display: block;
+}
+input[type="submit"]
+{
+    padding: 10px;
+    background-color: #567;
+    color: #fff;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header
+{
+    margin: 0px;
+    height: 120px;
+    width: 100%;
+    background-color: #567;
+    font-size: 4em;
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+    border: 10px double #fff;
+    border-left: 0px;
+    border-right: 0px;
+    margin-bottom: 0px;
+}
+form > div
+{
+    margin: 10px;
+}
+#centerDiv
+{
+    background: #fff;
+    width: 700px;
+    margin: 0 auto;
+    border-radius: 15px;
+    height: 400px;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    border: 2px solid #aaa;
+    -webkit-box-shadow:  1px 2px 2px 1px rgba(0, 0, 0, 0.5);
+        
+        box-shadow:  1px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+#dirContent tr td, #dirContent
+{
+    border: 3px solid #567;
+    margin: 0px;
+    padding: 0px;
+}
+#dirContent tr td
+{
+    background-color: #fff;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#dirContent
+{
+    background-color: #d9eef0;
+    border-radius: 10px;
+    font-size: 1.2em;
+    margin: 0 auto;
+    padding: 5px;
+}
+#menu
+{
+    margin-left: 0px;
+    margin-top: 20px;
+}
+nav
+{
+    margin: 0 auto;
+    width: 410px;
+    margin-bottom: 40px;
+}
+#registration
+{
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+.error
+{
+    width: 200px;
+    margin: 0 auto;
+    color: red;
+    font-size: 1.3em;
+}
+.important-message
+{
+    color: green;
+     width: 200px;
+    margin: 0 auto;
+    font-size: 1.3em;
+}
+#centerDiv h1
+{
+    color: #567;
+}
