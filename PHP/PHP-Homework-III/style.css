@@ -1,0 +1,103 @@
+header
+{
+    margin: 0px;
+    height: 120px;
+    width: 100%;
+    background-color: #BF223D;
+    font-size: 4em;
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+    border: 10px double #fff;
+    border-left: 0px;
+    border-right: 0px;
+    margin-bottom: 0px;
+}
+.main
+{
+	text-align: center;
+	background-color: #FAE8EB;
+}
+body
+{
+	background-color: #FAE8EB;
+}
+input[type="text"], textarea, select, input[type="password"]
+{
+	border-radius: 5px;
+	width: 170px;
+	padding: 5px;
+	margin-left: 20px;
+}
+input[type="submit"]
+{
+	width: 100px;
+	height: 30px;
+}
+
+nav
+{
+	margin-bottom:30px;
+}
+#menu>ul
+{
+	list-style-type: none;
+	background-color: #BF223D;
+}
+#menu>ul>li
+{
+	display: inline-block;
+	border-right: 2px solid #57111D;
+	margin:0px;
+}
+#menu>ul>li:first-of-type
+{
+	border-left: 2px solid #57111D;
+}
+#menu>ul>li>a
+{
+	padding-bottom: 15px;
+	padding-top: 15px;
+	padding-left: 35px;
+	padding-right: 35px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2em;
+	display: inline-block;
+	margin: 0px;
+}
+#menu>ul>li>a:hover
+{
+	background-color:#E6778A;
+}
+table
+{
+	border: 2px solid #000;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+table td, th
+{
+	border: 2px solid #000;
+	border-top: 0px solid #000;
+	margin: 0px;
+	padding: 15px;
+	text-align: center;
+}
+th
+{
+	background-color: #4F7D9E;
+}
+textarea
+{
+	height: 100px;
+	width: 250px;
+}
+.error
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: red;
+	padding: 10px;
+	padding-bottom: 10px;
+}
